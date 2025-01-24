@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Social</title>
+    <!-- Tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/project-detail.css"> 
+    <link rel="stylesheet" href="/assets/css/base.css"> 
+</head>
+<body>
+    <canvas id="neuralCanvas"></canvas>
+    <header>
+        <h1 class="project-title">Club Social</h1>
+    </header>
+    <main class="project-detail">
+        <!-- Información del Proyecto -->
+        <section class="section translucent">
+            <h2>Información del Proyecto</h2>
+            <ul>
+                <li><strong>Nombre:</strong> Club Social</li>
+                <li><strong>Categoría:</strong> Aplicación de Escritorio</li>
+                <li><strong>Tecnologías:</strong> C#, Entity Framework, Windows Forms, MVC</li>
+                <li><strong>Autores:</strong> Bautista Marinelli Scaglia, Mateo Barba, Lautaro Muñoz</li>
+            </ul>
+        </section>
+        
+        <!-- Descripción -->
+        <section class="section translucent">
+            <h2>Descripción</h2>
+            <p>
+                Club Social es una aplicación diseñada para gestionar las operaciones de un club, como el manejo de socios, 
+                el cobro de cuotas mensuales, la inscripción a actividades como la Colonia de Verano o deportes, y la 
+                reserva de instalaciones del club. El sistema busca mejorar la eficiencia y organización de las 
+                tareas administrativas del club.
+            </p>
+        </section>
+        
+        <!-- Características Principales -->
+        <section class="section translucent">
+            <h2>Características Principales</h2>
+            <ul>
+                <li>Gestión de socios con información detallada, incluyendo cuotas y pagos pendientes.</li>
+                <li>Inscripción y seguimiento de actividades como Colonia de Verano y deportes.</li>
+                <li>Reserva de instalaciones, como canchas o salones.</li>
+                <li>Interfaz fácil de usar desarrollada con Windows Forms.</li>
+            </ul>
+        </section>
+        
+        <!-- Galería -->
+        <section class="section translucent">
+            <h2>Galería</h2>
+            <!-- Texto dinámico arriba de la galería -->
+            <p class="caption" id="image-caption">Gestión de socios</p>
+            <!-- Contenedor del slideshow -->
+            <div class="slideshow">
+                <img src="/assets/imágenes/socios.PNG" alt="Gestión de socios" class="active">
+                <img src="/assets/imágenes/colonia_verano.PNG" alt="Inscripción a la Colonia de Verano">
+                <img src="/assets/imágenes/deportes.PNG" alt="Gestión de actividades deportivas">
+                <img src="/assets/imágenes/cuotas.PNG" alt="Gestión de cuotas mensuales">
+                
+                <!-- Botones de navegación -->
+                <div class="nav-buttons">
+                    <button id="prev-button">&#8592;</button>
+                    <button id="next-button">&#8594;</button>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Botón de volver -->
+        <a href="/index.html#projects" class="back-button">Volver</a>
+    </main>
+
+    <script src="../js/neuralNetwork.js"></script>
+    <script src="../js/slideshow.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* La barra ocupa todo el ancho */
+    z-index: 10;
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+/* Nueva línea violeta */
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Línea justo al final del header */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 2px; /* Grosor de la línea */
+    background-color: #c87fbd; /* Color violeta */
+    transform: translateY(2px); /* Mueve la línea un poco hacia arriba */
+}
+
+/* Estilo de navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Estilo de los enlaces */
+header nav ul li a {
+    color: #d580ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s, border 0.3s;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+/* Hover en los enlaces */
+header nav ul li a:hover {
+    color: #ffffff;
+    border: 2px solid #d580ff;
+}

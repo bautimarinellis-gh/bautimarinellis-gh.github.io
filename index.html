@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bautista Marinelli Scaglia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/about-section.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/intro-section.css">
+    <link rel="stylesheet" href="./assets/css/contact-section.css">
+    <link rel="stylesheet" href="./assets/css/arrow.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+
+
+</head>
+<body>
+    <!-- Fondo de redes neuronales (Canvas) -->
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción con Efecto de Máquina de Escribir -->
+    <section id="intro" class="section intro-section">
+        <h1 id="typewriter">Hola! Soy Bautista Marinelli Scaglia</h1>
+        <p>Desarrollador de Software Argentino.</p>
+
+        <a href="#about" class="scroll-down">
+            <span>&#8595;</span>
+        </a>
+    </section>
+
+    <!-- Sección About Me -->
+    <section id="about" class="section about-section">
+        <h2>Sobre mí</h2>
+        <div class="about-container">
+            <p>
+                Estudiante de 4to año de Ingeniería en Sistemas en la Universidad Abierta Interamericana (UAI), con título intermedio de Analista en Sistemas.
+                Tengo experiencia en desarrollo de software, bases de datos, utilizando herramientas como C#, Entity Framework, y SQL.
+            </p>
+        </div>
+
+        <!-- Sección de habilidades -->
+        <h3>Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card">C#</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">SQL</div>
+        </div>
+    </section>
+
+        <!-- Sección de proyectos -->
+
+    <section id="projects" class="section projects-section">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <!-- Tarjeta 1 -->
+            <div class="project-card">
+                <h3>Cine Manager</h3>
+                <p>Aplicación de gestión de películas que incluye módulos de inventario, usuarios y transacciones, desarrollada con C#, Windows Forms y Entity Framework. </p>
+                <a href="./assets/proyectos/cinemanager.html" class="project-btn">Ver Más</a>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="project-card">
+                <h3>Club Social</h3>
+                <p>Sistema de gestión para un club social que permite manejar actividades, miembros y eventos. Desarrollado como parte de un proyecto académico.</p>
+                <a href="./assets/proyectos/clubsocial.html" class="project-btn">Ver Más</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Sección Contacto -->
+<section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <p>¿Dudas o proyectos? Aquí tienes mis datos.</p>
+    
+    <div class="contact-info">
+        <div class="info-item">
+            <img src="./assets/icons/smartphone-call.png" alt="Teléfono" class="icon">
+            <span><a href="tel:3382405667">3382 405621</a></span>
+        </div>
+        <div class="info-item">
+            <img src="./assets/icons/email.png" alt="Correo Electrónico" class="icon">
+            <span><a href="mailto:bautimarinelli100@gmail.com">bautimarinelli100@gmail.com</a></span>
+        </div>
+        
+        <div class="info-item">
+            <img src="./assets/icons/instagram.png" alt="Instagram" class="icon">
+            <span><a href="https://www.instagram.com/bautimarinelli" target="_blank" rel="noopener noreferrer">@bautimarinelli</a></span>
+        </div>
+    </div>
+</section>
+
+    <script src="./assets/js/arrow.js"></script>
+    <script src="./assets/js/neuralNetwork.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/type.js"></script>
+
+</body>
+</html>

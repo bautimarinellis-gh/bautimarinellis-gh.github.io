@@ -1,0 +1,129 @@
+/* === General === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* === Título Principal === */
+.project-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.project-title:hover {
+    color: #d580ff; /* Color hover */
+    transform: scale(1.05); /* Hover minimalista */
+}
+
+/* === Proyecto - Detalle === */
+.project-detail {
+    width: 60%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* === Secciones === */
+.section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: justify; /* Texto más ordenado */
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #d580ff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* === Listas === */
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.section ul li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.section ul li strong {
+    font-weight: 600;
+}
+
+/* === Texto === */
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* === Botón Volver === */
+.back-button {
+    display: inline-block;
+    color: #d580ff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid #d580ff;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #ffffff;
+    border: 2px solid #d580ff;
+}
+
+/* === Galería - Slideshow === */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Más estrecho */
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+/* === Texto debajo de la galería === */
+.caption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem; /* Espacio entre el texto y la galería */
+}
+

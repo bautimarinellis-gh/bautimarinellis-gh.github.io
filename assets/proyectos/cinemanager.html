@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Manager</title>
+    <!-- Tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/project-detail.css"> 
+    <link rel="stylesheet" href="/assets/css/base.css"> 
+</head>
+<body>
+    <canvas id="neuralCanvas"></canvas>
+    <header>
+        <h1 class="project-title">Cine Manager</h1>
+    </header>
+    <main class="project-detail">
+        <!-- Información del Proyecto -->
+        <section class="section translucent">
+            <h2>Información del Proyecto</h2>
+            <ul>
+                <li><strong>Nombre:</strong> Cine Manager</li>
+                <li><strong>Categoría:</strong> Aplicación de Escritorio</li>
+                <li><strong>Tecnologías:</strong> C#, Entity Framework, Windows Forms, MVC</li>
+                <li><strong>Autores:</strong> Bautista Marinelli Scaglia</li>
+            </ul>
+        </section>
+        
+        <!-- Descripción -->
+        <section class="section translucent">
+            <h2>Descripción</h2>
+            <p>
+                Cine Manager es una aplicación diseñada para facilitar la gestión de películas en una tienda o videoclub. 
+                Incluye módulos de inventario, usuarios y transacciones, permitiendo administrar pedidos que pueden 
+                incluir ventas y alquileres en un solo proceso. También cuenta con funcionalidades de gestión de 
+                clientes, devoluciones, y actualización automática de stock.
+            </p>
+        </section>
+        
+        <!-- Características Principales -->
+        <section class="section translucent">
+            <h2>Características Principales</h2>
+            <ul>
+                <li>Gestión de inventario con datos detallados sobre películas, como proveedores, actores y género.</li>
+                <li>Procesamiento de pedidos que combinan ventas y alquileres en una única operación.</li>
+                <li>Control de devoluciones y actualizaciones automáticas de stock.</li>
+                <li>Interfaz intuitiva desarrollada con Windows Forms.</li>
+            </ul>
+        </section>
+        
+        <!-- Galería -->
+        <section class="section translucent">
+            <h2>Galería</h2>
+            <!-- Texto dinámico arriba de la galería -->
+            <p class="caption" id="image-caption">Vista del módulo de inventario</p>
+
+            <div class="slideshow">
+                <img src="/assets/imágenes/inventario.PNG" alt="Vista del módulo de inventario" class="active">
+                <img src="/assets/imágenes/pedidos.PNG" alt="Vista del proceso de pedidos">
+                <img src="/assets/imágenes/ventas.png" alt="Interfaz de ventas">
+                <img src="/assets/imágenes/compras.PNG" alt="Interfaz de compras">
+                <img src="/assets/imágenes/inicio.PNG" alt="Interfaz de inicio">  
+            </div>
+        </section>
+
+        <!-- Botón de volver -->
+        <a href="/index.html#projects" class="back-button">Volver</a>
+    </main>
+
+    <script src="../js/neuralNetwork.js"></script>
+    <script src="../js/slideshow.js"></script>
+</body>
+</html>

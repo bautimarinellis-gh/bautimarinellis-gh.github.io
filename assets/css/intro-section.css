@@ -1,0 +1,37 @@
+.intro-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    gap: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+p{
+    margin-top: -1rem;
+}
+#typewriter {
+    width: 26ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: typing 3s steps(45, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 28ch;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
